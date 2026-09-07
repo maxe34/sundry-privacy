@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sundry — Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70;
+    --rule: #e3e3e6; --link: #0055ff; --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e2229; --fg: #f2f2f7; --muted: #a1a1a8;
+      --rule: #33383f; --link: #4d8bff; --card: #262b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 39rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+  .lede { color: var(--muted); margin: 0 0 2.5rem; }
+  p, li { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--link); }
+  .contact {
+    background: var(--card); border-radius: 12px;
+    padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+  }
+  .contact p { margin: .4rem 0; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sundry — Support</h1>
+  <p class="lede">An expense tracker for iPhone. Two taps to log a spend, and
+  your data never leaves your phone.</p>
+
+  <h2>Get in touch</h2>
+  <div class="contact">
+    <p><strong>Email:</strong> <a href="mailto:cucerenco.m23@gmail.com?subject=Sundry">cucerenco.m23@gmail.com</a></p>
+    <p><strong>Telegram:</strong> <a href="https://t.me/Maxe34">@Maxe34</a></p>
+    <p style="color:var(--muted);font-size:.92rem;margin-top:.9rem;">
+      Please include your iPhone model and iOS version — it makes most
+      problems much faster to pin down.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h3>Where is my data stored? Can I sync between devices?</h3>
+  <p>Everything is stored locally on your iPhone. There is no account and no
+  server, which is why nobody — including the developer — can see what you
+  spend. The trade-off is that there is no sync between devices yet, and
+  <strong>deleting the app deletes your entries</strong>. Use Settings →
+  Export CSV before removing or replacing a phone.</p>
+
+  <h3>How do I get my data out?</h3>
+  <p>Settings → Export CSV. That produces a standard CSV you can open in
+  Numbers, Excel or Google Sheets, and share anywhere via the iOS share
+  sheet.</p>
+
+  <h3>Why did the amount come out wrong?</h3>
+  <p>Digits are whole currency units, so typing <strong>1</strong> then
+  <strong>0</strong> gives 10, not 0.10. Use the “.” key for cents: 4, “.”,
+  5 gives 4.50. You can also tap any digit in the amount to move the cursor
+  and correct it in place.</p>
+
+  <h3>Why do my categories keep reordering?</h3>
+  <p>The Add screen puts your most-used categories first, based on the
+  previous month. The order is frozen for the whole month and refreshes on
+  the first launch of a new one, so it never shuffles under your fingers
+  mid-month.</p>
+
+  <h3>Can I change a category’s colour or icon?</h3>
+  <p>Settings → swipe a category → Edit. You get a full colour picker and an
+  icon gallery.</p>
+
+  <h3>How do I record income?</h3>
+  <p>On the Add screen, switch the selector at the top from Expense to
+  Income. The monthly total on Transactions and Insights is a signed net, so
+  a month where you spent more than you earned shows as a negative figure.</p>
+
+  <h3>Ads and privacy choices</h3>
+  <p>Sundry shows one banner at the bottom of Insights and one at the bottom
+  of Transactions, after the content. There is never an ad on the entry
+  screen, never one between your transactions, and no full-screen ads.</p>
+  <p>In the EEA, the UK and Switzerland you are asked for consent before any
+  personalised ad is shown, and you can change that decision at any time
+  from <strong>Settings → Privacy options</strong>. Sundry never asks to
+  track you across other apps.</p>
+
+  <h3>Found a bug, or want a feature?</h3>
+  <p>Email or Telegram above. Recurring transactions and iCloud sync are the
+  two most likely additions.</p>
+
+  <h2>Privacy</h2>
+  <p>The full privacy policy is <a href="./">here</a>.</p>
+
+  <footer>Sundry for iPhone · com.cucerenco.sundry · Maxim Cucerenco</footer>
+</main>
+</body>
+</html>
