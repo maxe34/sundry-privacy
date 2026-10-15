@@ -49,7 +49,7 @@
 <body>
 <main>
   <h1>Sundry — Privacy Policy</h1>
-  <p class="date">Effective date: 14 October 2026</p>
+  <p class="date">Effective date: 15 October 2026</p>
 
   <p>Sundry is an expense tracker for iPhone, made by Maxim Cucerenco. This
   policy explains what the app does — and does not do — with your data.</p>
@@ -64,7 +64,20 @@
 
   <h2>What Sundry itself collects</h2>
   <p>Nothing. The app contains no analytics and sends no data of its own to
-  the developer or to anyone else.</p>
+  the developer.</p>
+
+  <h2>Exchange rates</h2>
+  <p>When a contactless payment captured from Apple Wallet is in a different
+  currency from your account, Sundry converts it at an approximate exchange
+  rate. To get that rate it downloads a public rate table from the free
+  <a href="https://github.com/fawazahmed0/exchange-api">currency-api</a> project,
+  served by the jsDelivr and Cloudflare content delivery networks. The request
+  says only which currency’s table is needed and for which day (for example,
+  euro rates for 15 October 2026). It never includes the amount, the shop, your
+  entries or any identifier. Like any web request, it reveals your device’s
+  IP address to those networks, which handle it under their own privacy
+  policies. Nothing is requested for payments in your account’s own
+  currency.</p>
 
   <h2>Advertising</h2>
   <p>Sundry shows banner ads served by Google AdMob (the Google Mobile Ads
